@@ -8,13 +8,13 @@ def hello(username):
         role = 'admin'
         age = 30
     else:
-        role = "user"
+        role = 'user'
         age = 16
-
+        
     user_data = {
         'name': username,
         'role': role,
-        'age': age
+        'age' : age
     }
     return render_template("welcome.html", user=user_data)
 
