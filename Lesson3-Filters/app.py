@@ -43,7 +43,7 @@ def home():
             <h1>Class Roster Application</h1>
             <p>View the student roster for Advanced Programming</p>
             <a href="/roster"> 👥View Roster</a>
-            <a href="/stats"> 📈View Stat</a>
+            <a href="/stats"> 📊View Stat</a>
         </body>
     </html>
     '''
@@ -59,10 +59,10 @@ def stats():
     students = read_roster()
     #Calculate statistics
     total = len(students)
-    seniors = [s for s in students if s['Grade'] == 12]
-    juniors= [s for s in students if s['Grade'] == 11]
-    sophomores= [s for s in students if s['Grade'] == 10]
-    freshman= [s for s in students if s['Grade'] == 9]
+    seniors = [s for s in students if s['Grade'] == '12']
+    juniors= [s for s in students if s['Grade'] == '11']
+    sophomores= [s for s in students if s['Grade'] == '10']
+    freshman= [s for s in students if s['Grade'] == '9']
     males = [s for s in students if s['Gender'] == 'M']
     females = [s for s in students if s['Gender'] == 'F']
 
